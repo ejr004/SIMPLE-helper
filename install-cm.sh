@@ -8,7 +8,7 @@ puppet apply -e 'class{"simple_grid::install::config_master::simple_installer::c
 
 read -p "XXXX Press enter to continue: XXXX"
 echo "Coping site_level_config_file.yaml"
-cp /root/site_level_config_file.yaml /etc/simple_grid/site_config/
+cp /root/site-level-config.yaml /etc/simple_grid/site_config/
 cp -r /root/SIMPLE-helper/lifecycle/ /etc/simple_grid/
 
 echo "Running SIMPLE GRID install stage"
