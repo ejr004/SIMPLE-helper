@@ -18,7 +18,7 @@ yum remove puppet* -y
 
 # Install puppet
 rpm -Uvh http://yum.puppet.com/puppet5-release-el-7.noarch.rpm
-yum install -y --disablerepo=cern puppetserver
+yum install -y --disablerepo=cern puppet-agent
 
 echo "Puppet client version should be 5.5.14"
 puppet --version
