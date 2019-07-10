@@ -19,9 +19,11 @@ sed -i 's/8080/80/' /etc/systemd/system/puppet-forge-server.service
 systemctl daemon-reload
 systemctl start puppet-forge-server.service
 
-Step 2. Clone this repo and have fun
 ```
 
+Step 2. Clone this repo and have fun
+
+```
 yum install git -y
 git clone https://github.com/ejr004/SIMPLE-helper.git
 ```
