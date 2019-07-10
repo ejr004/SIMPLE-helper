@@ -26,4 +26,4 @@ puppetserver --version
 echo "Puppet client version should be 5.5.14"
 puppet --version
 
-echo "Reboot is needed to update selinux"
+echo "Reboot is needed to update selinux status"
