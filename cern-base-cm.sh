@@ -1,11 +1,17 @@
 #!/bin/sh
 
+# yum update
+yum update -y
+
 # Disable firewall
 systemctl disable firewalld
 systemctl stop firewalld
 
 # Disable selinux
 sed -i 's/enforcing/disabled/' /etc/selinux/config
+
+# Install vim
+yum install -y vim-enhanced 
 
 # Remove cern puppet
 yum remove puppet* -y
@@ -19,8 +25,5 @@ echo "Puppet server version should be  5.3.8"
 puppetserver --version
 echo "Puppet client version should be 5.5.14"
 puppet --version
-
-# Install vim
-yum install -y vim-enhanced 
 
 echo "Reboot is needed to update selinux"
