@@ -8,8 +8,16 @@ systemctl stop firewalld
 sed -i 's/enforcing/disabled/' /etc/selinux/config
 
 # Remove cern puppet
-rpm -e puppet*
+yum remove puppet* -y
 
 # Install puppet
 rpm -Uvh http://yum.puppet.com/puppet5-release-el-7.noarch.rpm
-yum install --disablerepo=cern puppet-agent -y
+yum install -y --disablerepo=cern puppetserver
+
+echo "Puppet client version should be 5.5.14"
+puppet --version
+
+# Install vim
+yum install -y vim-enhanced 
+
+echo "Reboot is needed to update selinux"

@@ -19,5 +19,8 @@ echo "Puppet server version should be  5.3.8"
 puppetserver --version
 echo "Puppet client version should be 5.5.14"
 puppet --version
+
 # Install vim
 yum install -y vim-enhanced 
+
+echo "Reboot is needed to update selinux"
