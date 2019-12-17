@@ -15,3 +15,4 @@ echo "Running puppet apply with $cm_fqdn as puppet server"
 puppet apply --modulepath /etc/puppetlabs/code/environments/production/modules -e "class {'simple_grid::install::lightweight_component::simple_installer':puppet_master => '$cm_fqdn'}"
 
 echo -e "Now sign the certificates for the CM: \n puppet cert sign --all"
+# wget -O - https://github.com/ejr004/SIMPLE-helper/blob/master/install-lc.sh| bash

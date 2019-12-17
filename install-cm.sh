@@ -18,3 +18,5 @@ cp -r /root/SIMPLE-helper/lifecycle/ /etc/simple_grid/
 
 echo "Running SIMPLE GRID install stage"
 puppet apply --modulepath /etc/puppetlabs/code/environments/production/modules -e 'class{"simple_grid::install::config_master::simple_installer":}'
+
+# wget -O - https://raw.githubusercontent.com/ejr004/SIMPLE-helper/master/install-cm.sh |bash
