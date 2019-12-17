@@ -25,4 +25,4 @@ puppet --version
 
 echo "Reboot is needed to update selinux"
 
-# https://raw.githubusercontent.com/ejr004/SIMPLE-helper/master/cern-base-lc.sh |bash
+# wget -O https://raw.githubusercontent.com/ejr004/SIMPLE-helper/master/cern-base-lc.sh |bash
