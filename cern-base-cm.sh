@@ -27,3 +27,5 @@ echo "Puppet client version should be 5.5.14"
 puppet --version
 
 echo "Reboot is needed to update selinux status"
+
+# https://raw.githubusercontent.com/ejr004/SIMPLE-helper/master/cern-base-cm.sh|bash
